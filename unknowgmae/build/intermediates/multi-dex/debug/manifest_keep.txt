@@ -1,0 +1,11 @@
+-keep class com.maxdream.unkgame.App {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.maxdream.unkgame.act.Main { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

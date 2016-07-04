@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:orientation="vertical" />
+</RelativeLayout>
+<!-- From: file:/D:/abTest/FragmentBase/fragmentbase/src/main/res/layout/base_fragment.xml --><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/unKnowgame/fragmentbase/unspecified/res/layout/base_fragment.xml -->

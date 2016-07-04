@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/rage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@mipmap/rage_icon" />
+
+    <GridView
+        android:id="@+id/card_npc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_npc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray_white"
+        android:text="TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest" />
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bot_bg"
+        android:background="@mipmap/dice_icon" />
+
+    <RelativeLayout
+        android:id="@+id/dice_bg_block"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bot_bg"
+        android:layout_alignLeft="@+id/dice" />
+
+    <ImageView
+        android:id="@+id/hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bot_bg"
+        android:layout_toRightOf="@+id/dice_bg_block"
+        android:background="@mipmap/hp_icon" />
+
+    <RelativeLayout
+        android:id="@+id/bot_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bot_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="2dp" >
+
+        <GridView
+            android:id="@+id/card_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+
+        <RelativeLayout
+            android:id="@+id/power_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/card_user"
+            android:layout_below="@+id/card_user"
+            android:layout_marginTop="2dp"
+            android:background="@mipmap/power_line" />
+
+        <GridView
+            android:id="@+id/power_stone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/power_line"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:listSelector="@color/transparent"
+            android:numColumns="6"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+
+        <RelativeLayout
+            android:id="@+id/skill_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/power_stone"
+            android:layout_alignRight="@+id/card_user"
+            android:layout_below="@+id/card_user"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/power_line"
+            android:background="@mipmap/skill_item" />
+    </RelativeLayout>
+
+</RelativeLayout>

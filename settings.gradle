@@ -1,0 +1,3 @@
+include ':unknowgmae' ,':fragmentbase', ':connecttask'
+project( ':fragmentbase').projectDir = new File( settingsDir, '../FragmentBase/fragmentbase' )
+project( ':connecttask').projectDir = new File( settingsDir, '../ConnectTask/connecttask' )

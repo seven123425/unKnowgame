@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ConnectTask/connecttask/connecttask.iml" filepath="$PROJECT_DIR$/../ConnectTask/connecttask/connecttask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FragmentBase/fragmentbase/fragmentbase.iml" filepath="$PROJECT_DIR$/../FragmentBase/fragmentbase/fragmentbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unKnowgame.iml" filepath="$PROJECT_DIR$/unKnowgame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unknowgmae/unknowgmae.iml" filepath="$PROJECT_DIR$/unknowgmae/unknowgmae.iml" />
+    </modules>
+  </component>
+</project>

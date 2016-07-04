@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/map_user_title"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/map_swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_title"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/map_icon_more" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_title"
+        android:background="@mipmap/map_icon_setting" />
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/map_icon_message" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/map_user_bot"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/horizontal_view"
+        android:layout_alignLeft="@+id/horizontal_view"
+        android:layout_alignRight="@+id/horizontal_view"
+        android:layout_alignTop="@+id/horizontal_view" />
+</RelativeLayout><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/layout/body_map.xml -->

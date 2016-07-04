@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">unKnowTeam</string>
+    <string name="quit">離開</string>
+    <string name="quit_check">確定離開嗎</string>
+    <string name="networkIssue_loading">讀取中</string>
+    <string name="networkIssue_waiting">請稍後</string>
+    <string name="confirm">確認</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="networkIssue_not_have_net">網路連線出現錯誤</string>
+
+
+    <string-array name="demo_item_array">
+        <item>屬性石Demo</item>
+        <item>地圖Demo</item>
+    </string-array>
+</resources>
