@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
      android:shareInterpolator="false">
-    <alpha 
+    <objectAnimator
         android:fromAlpha="1"
         android:toAlpha="0"
         android:duration="300"
         android:startOffset="0"
     />
-</set><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/anim/alpha_exit.xml -->
+</set><!-- From: file:/D:/abTest/FragmentBase/fragmentbase/src/main/res/anim/alpha_exit.xml --><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/unKnowgame/fragmentbase/unspecified/res/anim/alpha_exit.xml -->

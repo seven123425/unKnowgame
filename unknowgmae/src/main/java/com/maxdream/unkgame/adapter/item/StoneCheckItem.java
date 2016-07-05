@@ -7,11 +7,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.android.fragmentbase.util.LayoutFormat;
 import com.maxdream.unkgame.R;
 import com.maxdream.unkgame.gmaeobj.StoneBase;
-import com.maxdream.unkgame.util.LayoutFormat;
 
-import static com.maxdream.unkgame.util.LayoutFormat.imageFormat;
+import static com.android.fragmentbase.util.LayoutFormat.imageFormat;
 import static com.maxdream.unkgame.util.ReSize.stoneHeight;
 import static com.maxdream.unkgame.util.ReSize.stoneWidth;
 

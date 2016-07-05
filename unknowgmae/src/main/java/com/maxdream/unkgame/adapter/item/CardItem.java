@@ -6,11 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.android.fragmentbase.util.LayoutFormat;
 import com.maxdream.unkgame.R;
-import com.maxdream.unkgame.util.LayoutFormat;
 
-import static com.maxdream.unkgame.util.LayoutFormat.imageFormat;
-import static com.maxdream.unkgame.util.ReSize.*;
+import static com.maxdream.unkgame.util.ReSize.cardHeight;
+import static com.maxdream.unkgame.util.ReSize.cardWidth;
+import static com.maxdream.unkgame.util.ReSize.imageFormat;
 
 public class CardItem {
 

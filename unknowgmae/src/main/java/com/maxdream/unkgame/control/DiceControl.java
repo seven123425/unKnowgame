@@ -2,7 +2,6 @@ package com.maxdream.unkgame.control;
 
 import android.app.Activity;
 
-import com.maxdream.unkgame.adapter.item.StoneItem;
 import com.maxdream.unkgame.gmaeobj.Dark;
 import com.maxdream.unkgame.gmaeobj.Fire;
 import com.maxdream.unkgame.gmaeobj.Light;

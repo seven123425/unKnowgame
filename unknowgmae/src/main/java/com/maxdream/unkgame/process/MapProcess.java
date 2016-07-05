@@ -1,29 +1,28 @@
 package com.maxdream.unkgame.process;
 
-import com.maxdream.android.process.ShapeProcess;
-import com.maxdream.unkgame.control.FragmentPageControl;
-import com.maxdream.unkgame.layoutstatus.PageProcess;
-import com.maxdream.unkgame.util.Constants;
+import com.android.fragmentbase.control.BaseFragmentControl;
+import com.android.fragmentbase.factory.BaseFragmentFactory;
+import com.android.fragmentbase.process.PageProcess;
+import com.android.fragmentbase.process.ShapeProcess;
+import com.maxdream.unkgame.control.ProcessControl;
+import com.maxdream.unkgame.factory.FragmentFactory;
 
 public class MapProcess extends ShapeProcess {
 
-    public MapProcess(PageProcess control) {
-        super(control);
-        FragmentPageControl.getInstance().setBodyFragmentType(Constants.BodyTypeEnum.map.toString());
-        FragmentPageControl.getInstance().getBodyWidget().changeNextFragment();
+    public MapProcess(PageProcess control, BaseFragmentFactory fragmentFactory, BaseFragmentControl fragmentControl) {
+        super(control, fragmentFactory, fragmentControl);
     }
 
     @Override
-    public void nextPage() {
-
+    protected void backLastProcess() {
+        ProcessControl.getInstance().setMapType(false);
     }
 
     @Override
-    public void lastPage() {
-        if (FragmentPageControl.getInstance().getBodyFragmentType().equals(Constants.BodyTypeEnum.map.toString())) {
-            FragmentPageControl.getInstance().setBodyFragmentType(Constants.BodyTypeEnum.demo.toString());
-            FragmentPageControl.getInstance().getBodyWidget().changeNextFragment();
-            FragmentPageControl.getInstance().setStoneProcessType(false);
-        }
+    protected String[] getPageString() {
+        String[] pageString = {
+                FragmentFactory.BodyTypeEnum.map.toString()
+        };
+        return pageString;
     }
 }

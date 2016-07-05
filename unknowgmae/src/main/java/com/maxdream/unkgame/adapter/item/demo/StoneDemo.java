@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.graphics.drawable.Drawable;
 
 import com.maxdream.unkgame.adapter.item.DemoItem;
-import com.maxdream.unkgame.control.FragmentPageControl;
+import com.maxdream.unkgame.control.ProcessControl;
 import com.maxdream.unkgame.util.Constants;
 
 public class StoneDemo extends DemoItem {
@@ -24,6 +24,6 @@ public class StoneDemo extends DemoItem {
 
     @Override
     public void clickEvent() {
-        FragmentPageControl.getInstance().setStoneProcessType(true);
+        ProcessControl.getInstance().setStoneType(true);
     }
 }

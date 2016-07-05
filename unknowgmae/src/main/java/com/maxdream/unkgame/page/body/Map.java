@@ -9,13 +9,26 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.android.fragmentbase.fragment.page.BodyFragment;
+import com.android.fragmentbase.fragment.page.TitleFragment;
 import com.maxdream.unkgame.R;
 import com.maxdream.unkgame.adapter.MapMenuAdapter;
 import com.maxdream.unkgame.control.ListMenuControl;
-import com.maxdream.unkgame.fragment.BodyFragment;
+import com.maxdream.unkgame.page.bar.UserBar;
 
-import static com.maxdream.unkgame.util.LayoutFormat.linearFormat;
-import static com.maxdream.unkgame.util.ReSize.*;
+import static com.android.fragmentbase.util.LayoutFormat.horizontalScrollViewFormat;
+import static com.maxdream.unkgame.util.ReSize.buttonFormat;
+import static com.maxdream.unkgame.util.ReSize.linearFormat;
+import static com.maxdream.unkgame.util.ReSize.mapBotIconLayoutWidth;
+import static com.maxdream.unkgame.util.ReSize.mapBotMenuHeight;
+import static com.maxdream.unkgame.util.ReSize.mapIconHeight;
+import static com.maxdream.unkgame.util.ReSize.mapIconWidth;
+import static com.maxdream.unkgame.util.ReSize.mapMoreIconHeight;
+import static com.maxdream.unkgame.util.ReSize.mapMoreIconWidth;
+import static com.maxdream.unkgame.util.ReSize.parentLayoutType;
+import static com.maxdream.unkgame.util.ReSize.relativeFormat;
+import static com.maxdream.unkgame.util.ReSize.userTitleHeight;
+import static com.maxdream.unkgame.util.ReSize.vWidth;
 
 public class Map extends BodyFragment {
 
@@ -58,5 +71,10 @@ public class Map extends BodyFragment {
         botMenu.setNumColumns(adapter.getCount());
         horizontalScrollViewFormat(0, mapBotMenuHeight, parentLayoutType.RelativeLayout.toString(), horizontalScrollView
         );
+    }
+
+    @Override
+    public TitleFragment getTitleFragment() {
+        return new UserBar();
     }
 }

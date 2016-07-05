@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.maxdream.android.adapter.CustomizeAdapter;
+import com.android.fragmentbase.adapter.CustomizeAdapter;
 import com.maxdream.unkgame.adapter.item.DemoItem;
 
 import java.util.ArrayList;

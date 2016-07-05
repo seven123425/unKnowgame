@@ -6,12 +6,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.android.fragmentbase.fragment.page.BodyFragment;
+import com.android.fragmentbase.fragment.page.TitleFragment;
 import com.maxdream.unkgame.R;
 import com.maxdream.unkgame.adapter.DemoAdapter;
 import com.maxdream.unkgame.adapter.item.demo.MapDemo;
 import com.maxdream.unkgame.adapter.item.demo.StoneDemo;
-import com.maxdream.unkgame.fragment.BasePageFragment;
-import com.maxdream.unkgame.fragment.BodyFragment;
 
 public class Demo extends BodyFragment {
 
@@ -37,5 +37,10 @@ public class Demo extends BodyFragment {
                 adapter.getItemEvent(position);
             }
         });
+    }
+
+    @Override
+    public TitleFragment getTitleFragment() {
+        return null;
     }
 }

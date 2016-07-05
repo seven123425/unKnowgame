@@ -4,9 +4,8 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.maxdream.android.adapter.CustomizeAdapter;
+import com.android.fragmentbase.adapter.CustomizeAdapter;
 import com.maxdream.unkgame.adapter.item.StoneCheckItem;
-import com.maxdream.unkgame.adapter.item.StoneItem;
 import com.maxdream.unkgame.gmaeobj.StoneBase;
 
 import java.util.ArrayList;

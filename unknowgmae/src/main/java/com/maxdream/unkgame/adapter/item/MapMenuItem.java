@@ -7,9 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.maxdream.unkgame.R;
-import com.maxdream.unkgame.util.LayoutFormat;
 
-import static com.maxdream.unkgame.util.LayoutFormat.imageFormat;
 import static com.maxdream.unkgame.util.ReSize.*;
 
 public abstract class MapMenuItem {

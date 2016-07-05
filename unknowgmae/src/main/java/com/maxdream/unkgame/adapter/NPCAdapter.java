@@ -1,11 +1,11 @@
 package com.maxdream.unkgame.adapter;
 
-import com.maxdream.android.adapter.CustomizeAdapter;
-import com.maxdream.unkgame.adapter.item.NPCItem;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.android.fragmentbase.adapter.CustomizeAdapter;
+import com.maxdream.unkgame.adapter.item.NPCItem;
 
 import java.util.ArrayList;
 

@@ -1,30 +1,33 @@
 package com.maxdream.unkgame.process;
 
-import com.maxdream.android.process.ShapeProcess;
-import com.maxdream.unkgame.control.FragmentPageControl;
+import com.android.fragmentbase.control.BaseFragmentControl;
+import com.android.fragmentbase.factory.BaseFragmentFactory;
+import com.android.fragmentbase.process.PageProcess;
+import com.android.fragmentbase.process.ShapeProcess;
+import com.maxdream.unkgame.control.ProcessControl;
 import com.maxdream.unkgame.factory.FragmentFactory;
-import com.maxdream.unkgame.layoutstatus.PageProcess;
-import com.maxdream.unkgame.util.Constants;
 
 public class StoneProcess extends ShapeProcess {
 
-    public StoneProcess(PageProcess control) {
-        super(control);
-        FragmentPageControl.getInstance().setBodyFragmentType(Constants.BodyTypeEnum.stone.toString());
-        FragmentPageControl.getInstance().getBodyWidget().changeNextFragment();
+    public StoneProcess(PageProcess control, BaseFragmentFactory fragmentFactory, BaseFragmentControl fragmentControl) {
+        super(control, fragmentFactory, fragmentControl);
     }
 
     @Override
-    public void nextPage() {
-
+    protected void backLastProcess() {
+        ProcessControl.getInstance().setStoneType(false);
     }
 
     @Override
     public void lastPage() {
-        if (FragmentPageControl.getInstance().getBodyFragmentType().equals(Constants.BodyTypeEnum.stone.toString())) {
-            FragmentPageControl.getInstance().setBodyFragmentType(Constants.BodyTypeEnum.demo.toString());
-            FragmentPageControl.getInstance().getBodyWidget().changeNextFragment();
-            FragmentPageControl.getInstance().setStoneProcessType(false);
-        }
+        super.lastPage();
+    }
+
+    @Override
+    protected String[] getPageString() {
+        String[] pageString = {
+                FragmentFactory.BodyTypeEnum.stone.toString()
+        };
+        return pageString;
     }
 }

@@ -5,17 +5,10 @@ import android.app.Activity;
 import com.maxdream.unkgame.R;
 
 public class Constants {
-    public enum FragmentTypeEnum {title, body, child, menu, other, extra}
 
-    public enum TitleTypeEnum {userbar}
+    public static String INTENT_TAG = "intent";
 
-    public enum BodyTypeEnum {demo, stone, map}
-
-    public enum MenuTypeEnum {stonecheck}
-
-    public enum ControlTypeEnum {main, stone, map}
-
-    public static int CHECK = 1;
+    public static String INTENT_OBJ = "obj";
 
     public enum ItemDemoEnum {
         stone, map;

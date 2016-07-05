@@ -1,29 +1,60 @@
 package com.maxdream.unkgame.factory;
 
-import com.maxdream.unkgame.layoutstatus.PageProcess;
-import com.maxdream.android.process.ShapeProcess;
+import com.android.fragmentbase.control.BaseFragmentControl;
+import com.android.fragmentbase.factory.BaseFragmentFactory;
+import com.android.fragmentbase.factory.BaseProcessFactory;
+import com.android.fragmentbase.process.PageProcess;
+import com.android.fragmentbase.process.ShapeProcess;
+import com.maxdream.unkgame.control.FragmentControl;
 import com.maxdream.unkgame.process.MainProcess;
 import com.maxdream.unkgame.process.MapProcess;
 import com.maxdream.unkgame.process.StoneProcess;
-import com.maxdream.unkgame.util.Constants;
 
-public class ProcessFactory {
+public class ProcessFactory extends BaseProcessFactory {
 
-    public PageProcess getProcess(String inputType) {
+    public enum ProcessTypeEnum {main}
+
+    public enum ShapeProcessEnum {stone, map}
+
+    private static ProcessFactory instance = new ProcessFactory() {
+
+    };
+
+    private ProcessFactory() {
+
+    }
+
+    public static ProcessFactory getInstance() {
+        return instance;
+    }
+
+    @Override
+    protected PageProcess initProcess(String inputType, BaseFragmentFactory fragmentFactory, BaseFragmentControl fragmentControl) {
         PageProcess control = null;
-        if (Constants.ControlTypeEnum.main.toString().equals(inputType)) {
-            control = new MainProcess();
+        if (ProcessTypeEnum.main.toString().equals(inputType)) {
+            control = new MainProcess(fragmentFactory, fragmentControl);
         }
         return control;
     }
 
-    public PageProcess getShapeProcess(String inputType, PageProcess control) {
+    @Override
+    protected ShapeProcess initShapeProcess(String inputType, PageProcess control, BaseFragmentFactory fragmentFactory, BaseFragmentControl fragmentControl) {
         ShapeProcess shapeControl = null;
-        if (Constants.ControlTypeEnum.stone.toString().equals(inputType)) {
-            shapeControl = new StoneProcess(control);
-        }else if (Constants.ControlTypeEnum.map.toString().equals(inputType)) {
-            shapeControl = new MapProcess(control);
+        if (ShapeProcessEnum.stone.toString().equals(inputType)) {
+            shapeControl = new StoneProcess(control, fragmentFactory, fragmentControl);
+        } else if (ShapeProcessEnum.map.toString().equals(inputType)) {
+            shapeControl = new MapProcess(control, fragmentFactory, fragmentControl);
         }
         return shapeControl;
+    }
+
+    @Override
+    protected BaseFragmentControl getFragmentDefaultControl() {
+        return FragmentControl.getInstance();
+    }
+
+    @Override
+    protected BaseFragmentFactory getFragmentDefaultFactory() {
+        return FragmentFactory.getInstance();
     }
 }

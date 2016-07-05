@@ -20,6 +20,10 @@
     <init>();
 }
 
+-keep class com.maxdream.unkgame.act.Alert {
+    <init>();
+}
+
 -keep public class * extends android.app.backup.BackupAgent {
     <init>();
 }

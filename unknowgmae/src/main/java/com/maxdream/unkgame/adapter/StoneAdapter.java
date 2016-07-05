@@ -1,15 +1,12 @@
 package com.maxdream.unkgame.adapter;
 
-import com.maxdream.android.adapter.CustomizeAdapter;
-import com.maxdream.unkgame.R;
-import com.maxdream.unkgame.adapter.item.DemoItem;
-import com.maxdream.unkgame.adapter.item.StoneItem;
-import com.maxdream.unkgame.gmaeobj.StoneBase;
-import com.maxdream.unkgame.util.LayoutFormat;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.android.fragmentbase.adapter.CustomizeAdapter;
+import com.maxdream.unkgame.adapter.item.StoneItem;
+import com.maxdream.unkgame.gmaeobj.StoneBase;
 
 import java.util.ArrayList;
 

@@ -1,14 +1,11 @@
 package com.maxdream.unkgame.page.bar;
 
-import com.maxdream.unkgame.R;
-import com.maxdream.unkgame.control.FragmentPageControl;
-import com.maxdream.unkgame.factory.FragmentFactory;
-import com.maxdream.unkgame.fragment.BasePageFragment;
-import com.maxdream.unkgame.fragment.TitleFragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.android.fragmentbase.fragment.page.TitleFragment;
+import com.maxdream.unkgame.R;
 
 public class UserBar extends TitleFragment {
 
@@ -19,10 +16,5 @@ public class UserBar extends TitleFragment {
 
     @Override
     protected void setupComponents(View fragmentView) {
-    }
-
-    @Override
-    public BasePageFragment nextFragment() {
-        return new FragmentFactory().getTitleWidget(FragmentPageControl.getInstance().getTitleFragmentType());
     }
 }

@@ -1266,6 +1266,14 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
+    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="GameTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 

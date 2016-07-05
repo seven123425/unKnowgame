@@ -8,26 +8,44 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.fragmentbase.fragment.page.BodyFragment;
+import com.android.fragmentbase.fragment.page.TitleFragment;
+import com.android.fragmentbase.util.LayoutFormat;
 import com.maxdream.unkgame.R;
+import com.maxdream.unkgame.adapter.CardAdapter;
 import com.maxdream.unkgame.adapter.NPCAdapter;
+import com.maxdream.unkgame.adapter.StoneAdapter;
 import com.maxdream.unkgame.adapter.item.CardItem;
 import com.maxdream.unkgame.adapter.item.NPCItem;
-import com.maxdream.unkgame.adapter.CardAdapter;
-import com.maxdream.unkgame.adapter.StoneAdapter;
-import com.maxdream.unkgame.control.FragmentPageControl;
+import com.maxdream.unkgame.control.DiceControl;
+import com.maxdream.unkgame.control.FragmentControl;
 import com.maxdream.unkgame.gmaeobj.StoneBase;
 import com.maxdream.unkgame.layoutstatus.PageUpdate;
-import com.maxdream.unkgame.control.DiceControl;
-import com.maxdream.unkgame.fragment.BodyFragment;
-import com.maxdream.unkgame.util.LayoutFormat;
 
 import java.util.ArrayList;
 
-import static com.maxdream.unkgame.util.LayoutFormat.gridviewFormat;
-import static com.maxdream.unkgame.util.LayoutFormat.imageFormat;
-import static com.maxdream.unkgame.util.LayoutFormat.relativeFormat;
-import static com.maxdream.unkgame.util.LayoutFormat.textFormat;
-import static com.maxdream.unkgame.util.ReSize.*;
+import static com.maxdream.unkgame.util.ReSize.botBGHeight;
+import static com.maxdream.unkgame.util.ReSize.cardGridHeight;
+import static com.maxdream.unkgame.util.ReSize.cardGridWidth;
+import static com.maxdream.unkgame.util.ReSize.diceBGWidth;
+import static com.maxdream.unkgame.util.ReSize.diceIconHeight;
+import static com.maxdream.unkgame.util.ReSize.diceIconWidth;
+import static com.maxdream.unkgame.util.ReSize.gridviewFormat;
+import static com.maxdream.unkgame.util.ReSize.hpHeight;
+import static com.maxdream.unkgame.util.ReSize.hpWidth;
+import static com.maxdream.unkgame.util.ReSize.imageFormat;
+import static com.maxdream.unkgame.util.ReSize.informationWidth;
+import static com.maxdream.unkgame.util.ReSize.npcCardGridHeight;
+import static com.maxdream.unkgame.util.ReSize.npcCardGridWidth;
+import static com.maxdream.unkgame.util.ReSize.powerGridHeight;
+import static com.maxdream.unkgame.util.ReSize.powerGridWidth;
+import static com.maxdream.unkgame.util.ReSize.powerLineHeight;
+import static com.maxdream.unkgame.util.ReSize.powerLineWidth;
+import static com.maxdream.unkgame.util.ReSize.rageHeight;
+import static com.maxdream.unkgame.util.ReSize.relativeFormat;
+import static com.maxdream.unkgame.util.ReSize.skillItemHeight;
+import static com.maxdream.unkgame.util.ReSize.skillItemWidth;
+import static com.maxdream.unkgame.util.ReSize.textFormat;
 
 public class Fight extends BodyFragment implements PageUpdate{
 
@@ -56,7 +74,7 @@ public class Fight extends BodyFragment implements PageUpdate{
             @Override
             public void onClick(View v) {
                 DiceControl.getInstance().droll(activity);
-                FragmentPageControl.getInstance().changeStoneCheckPage(stoneAdapter.getItemList());
+                FragmentControl.getInstance().openStoneCheck(activity, stoneAdapter.getItemList());
             }
         });
         hp = (ImageView) fragmentView.findViewById(R.id.hp);
@@ -99,5 +117,10 @@ public class Fight extends BodyFragment implements PageUpdate{
     public void update(ArrayList<StoneBase> items) {
         stoneAdapter.clearItems();
         stoneAdapter.addItems(items);
+    }
+
+    @Override
+    public TitleFragment getTitleFragment() {
+        return null;
     }
 }

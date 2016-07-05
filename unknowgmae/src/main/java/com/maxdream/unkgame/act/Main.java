@@ -1,58 +1,53 @@
 package com.maxdream.unkgame.act;
 
-import com.maxdream.unkgame.R;
-import com.maxdream.unkgame.control.FragmentPageControl;
-import com.maxdream.unkgame.factory.FragmentFactory;
-import com.maxdream.unkgame.util.Constants;
-
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.view.KeyEvent;
 
-import static com.maxdream.unkgame.util.LayoutFormat.findDeviceSizeUseHeight;
-import static com.maxdream.unkgame.util.ViewUtils.exitApp;
+import com.android.fragmentbase.BaseFragmentActivity;
+import com.android.fragmentbase.control.BaseFragmentControl;
+import com.android.fragmentbase.control.BaseProcessControl;
+import com.android.fragmentbase.fragment.page.BodyFragment;
+import com.android.fragmentbase.util.LayoutExampleSize;
+import com.maxdream.unkgame.control.FragmentControl;
+import com.maxdream.unkgame.control.ProcessControl;
+import com.maxdream.unkgame.factory.FragmentFactory;
 
-public class Main extends FragmentActivity {
+import static com.android.fragmentbase.util.LayoutFormat.findDeviceSizeUseHeight;
+
+public class Main extends BaseFragmentActivity implements LayoutExampleSize {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        findDeviceSizeUseHeight(this, false);
-        initTitleFragment();
-        initBodyFragment();
-        initMenuFragment();
-    }
-
-    private void initTitleFragment() {
-        FragmentPageControl.getInstance().setTitleFragmentType(Constants.TitleTypeEnum.userbar.toString());
-        FragmentPageControl.getInstance().initFragmentInLayout(R.id.title, this, new FragmentFactory().getTitleWidget(Constants.TitleTypeEnum.userbar.toString()));
-    }
-
-    private void initBodyFragment() {
-        FragmentPageControl.getInstance().setBodyFragmentType(Constants.BodyTypeEnum.demo.toString());
-        FragmentPageControl.getInstance().initFragmentInLayout(R.id.body, this, new FragmentFactory().getBodyWidget(Constants.BodyTypeEnum.demo.toString()));
-    }
-
-    private void initMenuFragment() {
-        FragmentPageControl.getInstance().initFragmentInLayout(R.id.check, this, new FragmentFactory().getMenuWidget(Constants.MenuTypeEnum.stonecheck.toString()));
+        findDeviceSizeUseHeight(this, this, false);
     }
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if (FragmentPageControl.getInstance().getBodyFragmentType().equals(Constants.BodyTypeEnum.demo.toString())
-                    && FragmentPageControl.getInstance().getTitleFragmentType().equals(Constants.TitleTypeEnum.userbar.toString())) {
-                exitApp(this);
-            } else {
-                if(FragmentPageControl.getInstance().getMenuWidget().getStatus()){
-                    FragmentPageControl.getInstance().changeStoneCheckPage();
-                }else {
-                    FragmentPageControl.getInstance().changeLastPage();
-                }
-            }
-            return false;
-        }
-        return super.onKeyDown(keyCode, event);
+    protected boolean beckEvent() {
+        return false;
+    }
+
+    @Override
+    protected BodyFragment bodyFragment() {
+        return FragmentFactory.getInstance().getBodyWidget(FragmentFactory.BodyTypeEnum.demo.toString());
+    }
+
+    @Override
+    protected BaseProcessControl getProcessDefaultControl() {
+        return ProcessControl.getInstance();
+    }
+
+    @Override
+    protected BaseFragmentControl getFragmentDefaultControl() {
+        return FragmentControl.getInstance();
+    }
+
+    @Override
+    public int layoutExampleWidth() {
+        return 1080;
+    }
+
+    @Override
+    public int layoutExampleHeight() {
+        return 1920;
     }
 }
