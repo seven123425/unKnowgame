@@ -46,7 +46,8 @@
         <activity
             android:name="com.maxdream.unkgame.act.Alert"
             android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
     </application>
 
 </manifest>

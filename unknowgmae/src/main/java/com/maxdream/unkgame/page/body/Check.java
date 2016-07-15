@@ -54,12 +54,14 @@ public class Check extends BodyFragment implements PageUpdate{
 
         gridView = (GridView) fragmentView.findViewById(R.id.stone_grid);
         gridView.setAdapter(adapter);
+
+        FragmentControl.getInstance().loadingStoneWithAlert(this);
     }
 
     @Override
     public void update(ArrayList<StoneBase> items) {
         adapter.clearItems();
-        ArrayList<StoneBase> itemsList = new ArrayList<StoneBase>();
+        ArrayList<StoneBase> itemsList = new ArrayList<>();
         itemsList.addAll(items);
         itemsList.addAll(DiceControl.getInstance().getStoneList());
         adapter.addItems(itemsList);

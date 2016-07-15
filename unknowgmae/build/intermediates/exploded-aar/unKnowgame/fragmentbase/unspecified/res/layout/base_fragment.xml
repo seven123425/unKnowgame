@@ -15,4 +15,3 @@
         android:layout_below="@+id/title"
         android:orientation="vertical" />
 </RelativeLayout>
-<!-- From: file:/D:/abTest/FragmentBase/fragmentbase/src/main/res/layout/base_fragment.xml -->

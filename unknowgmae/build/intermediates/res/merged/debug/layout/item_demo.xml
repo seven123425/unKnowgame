@@ -11,4 +11,4 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="30dp"
         android:textSize="20dp" />
-</RelativeLayout><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/layout/item_demo.xml -->
+</RelativeLayout>

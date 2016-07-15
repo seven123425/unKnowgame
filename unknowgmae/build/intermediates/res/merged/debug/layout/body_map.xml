@@ -63,4 +63,4 @@
         android:layout_alignLeft="@+id/horizontal_view"
         android:layout_alignRight="@+id/horizontal_view"
         android:layout_alignTop="@+id/horizontal_view" />
-</RelativeLayout><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/layout/body_map.xml -->
+</RelativeLayout>

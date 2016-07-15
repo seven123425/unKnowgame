@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string-array name="demo_item_array">
         <item>屬性石Demo</item>
         <item>地圖Demo</item>
     </string-array>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -30,11 +26,7 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/color.xml -->
-    <eat-comment/>
     <color name="blue">#0300FA</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -43,29 +35,19 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/unKnowgame/fragmentbase/unspecified/res/values/values.xml -->
-    <eat-comment/>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/color.xml -->
-    <eat-comment/>
     <color name="dark">#000000</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/color.xml -->
-    <eat-comment/>
     <color name="gray_dark">#616161</color>
     <color name="gray_dark2">#757575</color>
     <color name="gray_white">#B3B3B3</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -82,11 +64,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/color.xml -->
-    <eat-comment/>
     <color name="orange">#FA8000</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -95,12 +73,8 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/color.xml -->
-    <eat-comment/>
     <color name="purple">#8000FA</color>
     <color name="red">#FF0000</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -111,8 +85,6 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/color.xml -->
-    <eat-comment/>
     <color name="transparent">#0000</color>
     <color name="white">#FFFFFF</color>
     <color name="yellow">#F7FA00</color>
@@ -145,8 +117,6 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_end_material">0dp</dimen>
@@ -214,19 +184,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/dimens.xml -->
-    <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/unKnowgame/fragmentbase/unspecified/res/values/values.xml -->
-    <eat-comment/>
     <dimen name="fab_margin">16dp</dimen>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
@@ -267,11 +229,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/unKnowgame/fragmentbase/unspecified/res/values/values.xml -->
-    <eat-comment/>
     <string name="action_settings">Settings</string>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="app_name">unKnowTeam</string>
     <string name="confirm">確認</string>
     <string name="networkIssue_loading">讀取中</string>
@@ -280,23 +238,13 @@
     <string name="no">否</string>
     <string name="quit">離開</string>
     <string name="quit_check">確定離開嗎</string>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="yes">是</string>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/styles.xml -->
-    <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light"/>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/unKnowgame/fragmentbase/unspecified/res/values/values.xml -->
-    <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -309,8 +257,6 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>
@@ -1266,14 +1212,10 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/values/styles.xml -->
-    <eat-comment/>
     <style name="GameTheme" parent="AppBaseTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">false</item>
     </style>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 

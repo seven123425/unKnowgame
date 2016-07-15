@@ -5,4 +5,4 @@
         android:duration="500"
         android:fromYDelta="100%"
         android:toYDelta="0" />
-</set><!-- From: file:/D:/abTest/FragmentBase/fragmentbase/src/main/res/anim/slide_up.xml -->
+</set>

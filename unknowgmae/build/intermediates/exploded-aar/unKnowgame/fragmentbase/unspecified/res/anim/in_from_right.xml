@@ -7,4 +7,4 @@
         android:fromXDelta="100%p"
         android:toXDelta="0%p" />
 
-</set><!-- From: file:/D:/abTest/FragmentBase/fragmentbase/src/main/res/anim/in_from_right.xml -->
+</set>

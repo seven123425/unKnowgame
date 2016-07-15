@@ -23,4 +23,4 @@
             android:background="@mipmap/npc_hp" />
     </RelativeLayout>
 
-</LinearLayout><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/layout/item_npc.xml -->
+</LinearLayout>

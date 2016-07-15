@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/unKnowgame/fragmentbase/unspecified/res/values-v21/values-v21.xml -->
-    <eat-comment/>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-    <!-- From: file:/D:/abTest/unKnowgame/unknowgmae/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-v21/values-v21.xml -->
-    <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>
     <style name="Base.TextAppearance.AppCompat.Body2" parent="android:TextAppearance.Material.Body2"/>

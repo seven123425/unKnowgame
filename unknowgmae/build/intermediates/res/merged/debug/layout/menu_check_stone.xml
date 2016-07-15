@@ -30,4 +30,4 @@
             android:layout_centerHorizontal="true"
             android:text="@string/confirm" />
     </RelativeLayout>
-</RelativeLayout><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/layout/menu_check_stone.xml -->
+</RelativeLayout>

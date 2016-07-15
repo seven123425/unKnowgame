@@ -5,4 +5,4 @@
         android:duration="500"
         android:fromYDelta="0"
         android:toYDelta="100%" />
-</set><!-- From: file:/D:/abTest/FragmentBase/fragmentbase/src/main/res/anim/slide_down.xml -->
+</set>

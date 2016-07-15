@@ -11,4 +11,4 @@
         android:layout_height="wrap_content"
         android:background="@mipmap/card" />
 
-</LinearLayout><!-- From: file:/D:/abTest/unKnowgame/unknowgmae/src/main/res/layout/item_card.xml -->
+</LinearLayout>
