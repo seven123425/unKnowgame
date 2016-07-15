@@ -9,7 +9,7 @@ import com.maxdream.unkgame.factory.ProcessFactory;
 
 public class ProcessControl extends BaseProcessControl {
 
-    private boolean mapType, stoneType;
+    private boolean mapType, stoneType, backType;
 
     private BaseProcessFactory factory = ProcessFactory.getInstance();
 
@@ -53,6 +53,23 @@ public class ProcessControl extends BaseProcessControl {
         this.stoneType = stoneType;
         if (stoneType) {
             initShapePageControl(factory, ProcessFactory.ShapeProcessEnum.stone.toString());
+            FragmentControl.getInstance().changeNextPage(this);
+        } else {
+            if (process instanceof ShapeProcess) {
+                process = ((ShapeProcess) process).getLastControl();
+                FragmentControl.getInstance().changeLastPage(this);
+            }
+        }
+    }
+
+    public boolean isBackType() {
+        return stoneType;
+    }
+
+    public void setBackType(boolean backType) {
+        this.backType = backType;
+        if (backType) {
+            initShapePageControl(factory, ProcessFactory.ShapeProcessEnum.back.toString());
             FragmentControl.getInstance().changeNextPage(this);
         } else {
             if (process instanceof ShapeProcess) {

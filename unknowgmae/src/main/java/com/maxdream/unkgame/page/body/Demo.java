@@ -10,6 +10,7 @@ import com.android.fragmentbase.fragment.page.BodyFragment;
 import com.android.fragmentbase.fragment.page.TitleFragment;
 import com.maxdream.unkgame.R;
 import com.maxdream.unkgame.adapter.DemoAdapter;
+import com.maxdream.unkgame.adapter.item.demo.BackDemo;
 import com.maxdream.unkgame.adapter.item.demo.MapDemo;
 import com.maxdream.unkgame.adapter.item.demo.StoneDemo;
 
@@ -28,6 +29,7 @@ public class Demo extends BodyFragment {
         adapter = new DemoAdapter(activity);
         adapter.addItem(new StoneDemo(activity));
         adapter.addItem(new MapDemo(activity));
+        adapter.addItem(new BackDemo(activity));
 
         listView = (ListView) fragmentView.findViewById(R.id.list_view);
         listView.setAdapter(adapter);

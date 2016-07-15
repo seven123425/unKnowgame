@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class StoneCheckAdapter extends CustomizeAdapter {
 
-    private ArrayList<StoneCheckItem> itemList = new ArrayList<StoneCheckItem>();
+    private ArrayList<StoneCheckItem> itemList = new ArrayList<>();
 
     public StoneCheckAdapter(Context context) {
         super(context);

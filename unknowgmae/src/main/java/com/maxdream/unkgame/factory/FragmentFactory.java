@@ -5,6 +5,7 @@ import com.android.fragmentbase.fragment.page.BodyFragment;
 import com.android.fragmentbase.fragment.page.ChildFragment;
 import com.android.fragmentbase.fragment.page.MenuFragment;
 import com.android.fragmentbase.fragment.page.OtherFragment;
+import com.maxdream.unkgame.page.body.Back;
 import com.maxdream.unkgame.page.body.Check;
 import com.maxdream.unkgame.page.body.Demo;
 import com.maxdream.unkgame.page.body.Fight;
@@ -12,9 +13,7 @@ import com.maxdream.unkgame.page.body.Map;
 
 public class FragmentFactory extends BaseFragmentFactory {
 
-    public enum BodyTypeEnum {demo, stone, map, check}
-
-    public enum MenuTypeEnum {stonecheck}
+    public enum BodyTypeEnum {demo, stone, map, check, back}
 
     private static FragmentFactory instance = new FragmentFactory() {
 
@@ -40,6 +39,8 @@ public class FragmentFactory extends BaseFragmentFactory {
             fragment = new Demo();
         } else if (inputType.equals(BodyTypeEnum.check.toString())) {
             fragment = new Check();
+        } else if (inputType.equals(BodyTypeEnum.back.toString())) {
+            fragment = new Back();
         }
         return fragment;
     }

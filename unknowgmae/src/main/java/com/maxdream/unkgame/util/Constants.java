@@ -8,10 +8,8 @@ public class Constants {
 
     public static String INTENT_TAG = "intent";
 
-    public static String INTENT_OBJ = "obj";
-
     public enum ItemDemoEnum {
-        stone, map;
+        stone, map, back;
 
         public static String getText(Activity activity, String input) {
             String[] setting = activity.getResources().getStringArray(R.array.demo_item_array);
@@ -20,6 +18,8 @@ public class Constants {
                 type = setting[0];
             } else if (input.equals(map.toString())) {
                 type = setting[1];
+            } else if (input.equals(back.toString())) {
+                type = setting[2];
             }
             return type;
         }
