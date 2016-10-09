@@ -41,6 +41,16 @@ public class ReSize extends LayoutFormat {
     public static float mapBotIconLayoutWidth = (float) (Math.round((layoutExampleSize.layoutExampleWidth() * 100) / 230)) / 100;
     public static float mapMoreIconHeight = (float) (Math.round((layoutExampleSize.layoutExampleHeight() * 100) / 115)) / 100;
     public static float mapMoreIconWidth = (float) (Math.round((layoutExampleSize.layoutExampleWidth() * 100) / 305)) / 100;
+    public static float backTitleIconHeight = (float) (Math.round((layoutExampleSize.layoutExampleHeight() * 100) / 100)) / 100;
+    public static float backTitleIconWidth = (float) (Math.round((layoutExampleSize.layoutExampleWidth() * 100) / 450)) / 100;
+    public static float backChannelIconHeight = (float) (Math.round((layoutExampleSize.layoutExampleHeight() * 100) / 189)) / 100;
+    public static float backChannelIconWidth = (float) (Math.round((layoutExampleSize.layoutExampleWidth() * 100) / 134)) / 100;
+    public static float backItemHeight = (float) (Math.round((layoutExampleSize.layoutExampleHeight() * 100) / 183)) / 100;
+    public static float backItemWidth = (float) (Math.round((layoutExampleSize.layoutExampleWidth() * 100) / 182)) / 100;
+    public static float backLineHeight = (float) (Math.round((layoutExampleSize.layoutExampleHeight() * 100) / 12)) / 100;
+    public static float backLineWidth = (float) (Math.round((layoutExampleSize.layoutExampleWidth() * 100) / 1080)) / 100;
+    public static float backTypeHeight = (float) (Math.round((layoutExampleSize.layoutExampleHeight() * 100) / 88)) / 100;
+    public static float backTypeWidth = (float) (Math.round((layoutExampleSize.layoutExampleWidth() * 100) / 138)) / 100;
 
     public static float getBitItemWidth() {
         return vWidth / ITEM_IMAGE_WIDTH;

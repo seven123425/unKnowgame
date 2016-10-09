@@ -4,6 +4,9 @@
         <item>屬性石Demo</item>
         <item>地圖Demo</item>
         <item>背包Demo</item>
+        <item>隊伍(圖片)Demo</item>
+        <item>祭壇(圖片)Demo</item>
+        <item>角色(圖片)Demo</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -46,6 +49,7 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="gray_back">#A0A0A0</color>
     <color name="gray_dark">#616161</color>
     <color name="gray_dark2">#757575</color>
     <color name="gray_white">#B3B3B3</color>
@@ -1212,10 +1216,6 @@
         <item name="android:background">?attr/controlBackground</item>
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
-    </style>
-    <style name="GameTheme" parent="AppBaseTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">false</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

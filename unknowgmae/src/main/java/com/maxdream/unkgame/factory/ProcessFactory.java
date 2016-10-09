@@ -6,16 +6,19 @@ import com.android.fragmentbase.factory.BaseProcessFactory;
 import com.android.fragmentbase.process.PageProcess;
 import com.android.fragmentbase.process.ShapeProcess;
 import com.maxdream.unkgame.control.FragmentControl;
+import com.maxdream.unkgame.process.AlterProcess;
 import com.maxdream.unkgame.process.BackProcess;
+import com.maxdream.unkgame.process.CharacterProcess;
 import com.maxdream.unkgame.process.MainProcess;
 import com.maxdream.unkgame.process.MapProcess;
 import com.maxdream.unkgame.process.StoneProcess;
+import com.maxdream.unkgame.process.TeamProcess;
 
 public class ProcessFactory extends BaseProcessFactory {
 
     public enum ProcessTypeEnum {main}
 
-    public enum ShapeProcessEnum {stone, map, back}
+    public enum ShapeProcessEnum {stone, map, back, team, alter, character}
 
     private static ProcessFactory instance = new ProcessFactory() {
 
@@ -47,6 +50,12 @@ public class ProcessFactory extends BaseProcessFactory {
             shapeControl = new MapProcess(control, fragmentFactory, fragmentControl);
         } else if (ShapeProcessEnum.back.toString().equals(inputType)) {
             shapeControl = new BackProcess(control, fragmentFactory, fragmentControl);
+        } else if (ShapeProcessEnum.team.toString().equals(inputType)) {
+            shapeControl = new TeamProcess(control, fragmentFactory, fragmentControl);
+        } else if (ShapeProcessEnum.character.toString().equals(inputType)) {
+            shapeControl = new CharacterProcess(control, fragmentFactory, fragmentControl);
+        } else if (ShapeProcessEnum.alter.toString().equals(inputType)) {
+            shapeControl = new AlterProcess(control, fragmentFactory, fragmentControl);
         }
         return shapeControl;
     }

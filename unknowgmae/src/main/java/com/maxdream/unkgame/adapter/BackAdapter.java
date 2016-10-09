@@ -5,13 +5,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.fragmentbase.adapter.CustomizeAdapter;
-import com.maxdream.unkgame.adapter.item.CardItem;
+import com.maxdream.unkgame.adapter.item.BackItem;
 
 import java.util.ArrayList;
 
 public class BackAdapter extends CustomizeAdapter{
 
-    private ArrayList<CardItem> itemList = new ArrayList<>();
+    private ArrayList<BackItem> itemList = new ArrayList<>();
 
     public BackAdapter(Context context) {
         super(context);
@@ -19,7 +19,7 @@ public class BackAdapter extends CustomizeAdapter{
 
     @Override
     public int getCount() {
-        return 30;
+        return itemList.size();
     }
 
     @Override
@@ -32,7 +32,7 @@ public class BackAdapter extends CustomizeAdapter{
         return itemList.get(position).getItemView();
     }
 
-    public void addItem(CardItem item) {
+    public void addItem(BackItem item) {
         itemList.add(item);
         notifyDataSetChanged();
     }

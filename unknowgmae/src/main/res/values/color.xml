@@ -12,5 +12,6 @@
     <color name="orange">#FA8000</color>
     <color name="yellow">#F7FA00</color>
     <color name="purple">#8000FA</color>
+    <color name="gray_back">#A0A0A0</color>
 
 </resources>

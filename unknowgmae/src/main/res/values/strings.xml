@@ -16,5 +16,8 @@
         <item>屬性石Demo</item>
         <item>地圖Demo</item>
         <item>背包Demo</item>
+        <item>隊伍(圖片)Demo</item>
+        <item>祭壇(圖片)Demo</item>
+        <item>角色(圖片)Demo</item>
     </string-array>
 </resources>

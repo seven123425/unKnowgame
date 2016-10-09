@@ -2,8 +2,4 @@
 
     <style name="AppBaseTheme" parent="android:Theme.Light"></style>
 
-    <style name="GameTheme" parent="AppBaseTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">false</item>
-    </style>
 </resources>
